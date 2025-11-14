@@ -8,8 +8,8 @@ from flask_cors import CORS
 
 
 # Set your CSV path here (raw string to avoid Windows backslash escapes)
-CSV_PATH = r"C:\Users\kritS11\Desktop\Courses_Recommendation\data\udemy_courses.csv"
-
+# CSV_PATH = r"C:\Users\kritS11\Desktop\Courses_Recommendation\data\udemy_courses.csv"
+CSV_PATH = "../data/udemy_courses.csv"
 # Put backend on top-level sys.path if needed (not usually required)
 try:
     from recommender import create_recommender
