@@ -19,7 +19,7 @@ except Exception:
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app)
 
 
 # Create recommender singleton and print some diagnostics
