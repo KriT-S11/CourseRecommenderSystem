@@ -1,0 +1,73 @@
+# ---------------------------
+# React (Frontend)
+# ---------------------------
+node_modules/
+build/
+dist/
+.cache/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vscode/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+*.log.*
+
+# ---------------------------
+# Flask (Backend)
+# ---------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.sqlite3
+instance/
+*.db
+
+# Flask environment files
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Flask migrations
+migrations/
+
+# Byte-compiled / compiled files
+*.so
+
+# ---------------------------
+# OS / General
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Virtual environment (common)
+# ---------------------------
+.idea/
+*.swp
+*.swo
+pip-wheel-metadata/
+pip-log.txt
+coverage/
+.cache/
+pytest_cache/
+.tox/
+.playground/
+
