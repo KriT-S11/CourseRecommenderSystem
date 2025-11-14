@@ -2,6 +2,10 @@
 from flask import Flask, request, jsonify
 import os
 import traceback
+from flask_cors import CORS
+
+
+
 
 # Set your CSV path here (raw string to avoid Windows backslash escapes)
 CSV_PATH = r"C:\Users\kritS11\Desktop\Courses_Recommendation\data\udemy_courses.csv"
@@ -14,6 +18,9 @@ except Exception:
     raise
 
 app = Flask(__name__)
+
+CORS(app, resources={r"/api/*": {"origins": "*"}})
+
 
 # Create recommender singleton and print some diagnostics
 try:
@@ -32,6 +39,7 @@ except Exception as e:
     print("Error initializing recommender:")
     traceback.print_exc()
     raise
+
 
 
 @app.route("/recommend")
